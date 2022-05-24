@@ -1,0 +1,98 @@
+@import 'normalize';
+
+@mixin orangeNav{
+    display:block;
+    width:135px;
+    height:40px;
+    line-height: 40px;
+    background-color: var(--orange);
+    color:var(--white);
+    text-align: center;
+    text-transform:uppercase;
+    border-radius: 2px;
+    transition:0.5s;
+
+
+    &:hover,
+    &:focus{
+        background-color: var(--orangehover);
+        color: var(--white);
+    }
+
+  
+}
+
+@mixin orangeBtn {
+    display: block;
+    width: 129px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+        background-color: var(--orangehover);
+        letter-spacing: 1px;
+    }
+
+    @media screen and (min-width:768px){
+        width: 149px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+@mixin darkblueBtn {
+    display: block;
+    width: 129px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    background-color: var(--darkblue);
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+        background-color: var(--darkbluehover);
+        letter-spacing:1px;
+    }
+
+    @media screen and (min-width:768px){
+        width: 149px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+@mixin content-width{
+    max-width:90%;
+    margin:0 auto;
+}
+
+@mixin my-25{
+    margin:25px auto;
+}
+
+@mixin my-50 {
+    margin: 50px auto;
+}
+
+@mixin my-75 {
+    margin: 75px auto;
+}
+
+@mixin px-20{
+    padding:0 20px;
+}
